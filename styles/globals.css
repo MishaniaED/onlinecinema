@@ -1,16 +1,108 @@
 html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  color: #2E2E2E;
+  font-family: Arial, cursive;
+  font-weight: 400;
+  background-size: 200px;
+  background-color: gray;
+  line-height: 1.6;
+  margin: auto;
+}
+a {
+  color: #0073ff;
+  text-decoration: none;
+}
+.content {
+  max-width: 1400px;
+  /*min-height: 600px;*/
+  margin: 30px auto;
+  box-shadow: rgba(0, 0, 0, 0.043) 0 0 5px 3px;
+  border: 5px solid white;
+  padding: 20px;
+  background: #fff;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 15px;
+}
+header svg {
+  font-size: 50px;
+  color: #ffc600;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+nav a {
+  margin-left: 15px;
+  color: #2E2E2E;
+}
+footer {
+  display: block;
+  text-align: center;
+  padding: 15px 0;
+  bottom: 0;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+/* Clear floats after the columns */
+.Row:after {
+  content: "";
+  display: table;
+  clear: both;
+  padding: 15px 0;
+}
+
+.card{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}
+.film-card{
+  display: block;
+  transition: transform .2s;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
+.film-card:hover{
+  transform: scale(1.2)
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+hr {
+  border: 1px solid #e3dfdf;
+  margin-bottom: 20px;
+}
+
+.btn-primary{
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.auth-ref{
+  display: none;
 }
