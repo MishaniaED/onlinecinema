@@ -1,19 +1,24 @@
 import Link from "next/link";
 import Image from "next/image";
 
+function ChangeVisibility2(id1, id2){
+    document.getElementById(id2).style.display = 'block';
+    document.getElementById(id1).style.display = 'none';
+}
+
 export default function Header() {
     return (
         <header>
-            <div >
-                <Image src="/logo.png" alt="" role="presentation" width={50} height={50}/>
-                Cinema 813
+            <div>
+                <Image src="/logo.png" alt="" role="presentation" width={70} height={70}/>
+                <div>Cinema 813</div>
             </div>
             <nav>
                 <Link href="/">
                     <a>Главная</a>
                 </Link>
                 {' '}
-                <div className='not-auth-ref'>
+                <div className='not-auth-ref' id='not-auth-ref'>
                     <Link href="/posts/login" className='first-refs'>
                         <a>Войти</a>
                     </Link>
@@ -23,7 +28,7 @@ export default function Header() {
                 </Link>
                 </div>
 
-               <div className='auth-ref'>
+               <div className='auth-ref' style = {{display: "none"}} id='auth-ref'>
                    <Link href="/posts/account" className='second-refs'>
                        <a>Личный кабинет</a>
                    </Link>
@@ -32,7 +37,7 @@ export default function Header() {
                         <a>Библиотека</a>
                    </Link>
                    {' '}
-                   <button className="logout-btn">Выйти</button>
+                   <button onClick={()=>ChangeVisibility2('auth-ref', 'not-auth-ref')} id='LogoutBtn' className="logout-btn">Выйти</button>
                </div>
 
                 <Link href="/posts/about">

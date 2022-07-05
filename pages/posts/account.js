@@ -1,6 +1,5 @@
 import Head from "next/head";
 
-
 export default function Account(){
     return(
         <>
@@ -19,7 +18,7 @@ export default function Account(){
                         <label><b>Пароль</b></label>
                         <input name="password" type="password" content="Текущий пароль" required/>
                     </div>
-                    <button className="btn-primary">
+                    <button id ="UpdateDataBtn" className="btn-primary">
                         Обновить
                     </button>
                 </div>

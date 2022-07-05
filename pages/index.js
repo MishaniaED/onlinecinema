@@ -12,105 +12,149 @@ export default function Home() {
         <h1 className = "title"> Главная </h1>
 
         <div className="Row">
-            <div class="column">
-                <div class="film-card">
+            <div className="column">
+                <div className="film-card">
+                    {/*<Player/>*/}
                     <img src="/logo.png" alt="Preview" width={200} height={200}/>
-                    <div class="container">
+                    <div className="container">
                         <h4><b>Название фильма</b></h4>
                         <p>Возможно описание</p>
-                        <p><button className="btn-primary">Смотреть</button></p>
+                        <Link href='/posts/player'>
+                            <a>
+                                <button className="btn-primary">
+                                    Смотреть
+                                </button></a>
+                        </Link>
                     </div>
                 </div>
             </div>
-            <div class="column">
-                <div class="film-card">
+            <div className="column">
+                <div className="film-card">
                     <img src="/logo.png" alt="Preview" width={200} height={200}/>
-                    <div class="container">
+                    <div className="container">
                         <h4><b>Название фильма</b></h4>
                         <p>Возможно описание</p>
-                        <p><button className="btn-primary">Смотреть</button></p>
+                        <Link href='/posts/player'>
+                            <a>
+                                <button className="btn-primary">
+                                    Смотреть
+                                </button></a>
+                        </Link>
                     </div>
                 </div>
             </div>
-            <div class="column">
-                <div class="film-card">
+            <div className="column">
+                <div className="film-card">
                     <img src="/logo.png" alt="Preview" width={200} height={200}/>
-                    <div class="container">
+                    <div className="container">
                         <h4><b>Название фильма</b></h4>
                         <p>Возможно описание</p>
-                        <p><button className="btn-primary">Смотреть</button></p>
+                        <Link href='/posts/player'>
+                            <a>
+                                <button className="btn-primary">
+                                    Смотреть
+                                </button></a>
+                        </Link>
                     </div>
                 </div>
             </div>
             <div className="right-column">
-                <div class="menu">
+                <div className="menu">
                     <h2>Параметры поиска</h2>
                 </div>
             </div>
         </div>
 
-
-
         <div className="Row">
-            <div class="column">
-                <div class="film-card">
+            <div className="column">
+                <div className="film-card">
                     <img src="/logo.png" alt="Preview" width={200} height={200}/>
-                    <div class="container">
+                    <div className="container">
                         <h4><b>Название фильма</b></h4>
                         <p>Возможно описание</p>
-                        <p><button className="btn-primary">Смотреть</button></p>
+                        <Link href='/posts/player'>
+                            <a>
+                                <button className="btn-primary">
+                                    Смотреть
+                                </button></a>
+                        </Link>
                     </div>
                 </div>
             </div>
-            <div class="column">
-                <div class="film-card">
+            <div className="column">
+                <div className="film-card">
                     <img src="/logo.png" alt="Preview" width={200} height={200}/>
-                    <div class="container">
+                    <div className="container">
                         <h4><b>Название фильма</b></h4>
                         <p>Возможно описание</p>
-                        <p><button className="btn-primary">Смотреть</button></p>
+                        <Link href='/posts/player'>
+                            <a>
+                                <button className="btn-primary">
+                                    Смотреть
+                                </button></a>
+                        </Link>
                     </div>
                 </div>
             </div>
-            <div class="column">
-                <div class="film-card">
+            <div className="column">
+                <div className="film-card">
                     <img src="/logo.png" alt="Preview" width={200} height={200}/>
-                    <div class="container">
+                    <div className="container">
                         <h4><b>Название фильма</b></h4>
                         <p>Возможно описание</p>
-                        <p><button className="btn-primary">Смотреть</button></p>
+                        <Link href='/posts/player'>
+                            <a>
+                                <button className="btn-primary">
+                                    Смотреть
+                                </button></a>
+                        </Link>
                     </div>
                 </div>
             </div>
         </div>
         <div className="Row">
-            <div class="column">
-                <div class="film-card">
+            <div className="column">
+                <div className="film-card">
                     <img src="/logo.png" alt="Preview" width={200} height={200}/>
-                    <div class="container">
+                    <div className="container">
                         <h4><b>Название фильма</b></h4>
                         <p>Возможно описание</p>
-                        <p><button className="btn-primary">Смотреть</button></p>
+                        <Link href='/posts/player'>
+                            <a>
+                                <button className="btn-primary">
+                                    Смотреть
+                                </button></a>
+                        </Link>
                     </div>
                 </div>
             </div>
-            <div class="column">
-                <div class="film-card">
+            <div className="column">
+                <div className="film-card">
                     <img src="/logo.png" alt="Preview" width={200} height={200}/>
-                    <div class="container">
+                    <div className="container">
                         <h4><b>Название фильма</b></h4>
                         <p>Возможно описание</p>
-                        <p><button className="btn-primary">Смотреть</button></p>
+                        <Link href='/posts/player'>
+                            <a>
+                                <button className="btn-primary">
+                                    Смотреть
+                                </button></a>
+                        </Link>
                     </div>
                 </div>
             </div>
-            <div class="column">
-                <div class="film-card">
+            <div className="column">
+                <div className="film-card">
                     <img src="/logo.png" alt="Preview" width={200} height={200}/>
-                    <div class="container">
+                    <div className="container">
                         <h4><b>Название фильма</b></h4>
                         <p>Возможно описание</p>
-                        <p><button className="btn-primary">Смотреть</button></p>
+                        <Link href='/posts/player'>
+                            <a>
+                                <button className="btn-primary">
+                                    Смотреть
+                                </button></a>
+                        </Link>
                     </div>
                 </div>
             </div>

@@ -1,6 +1,11 @@
 import Link from 'next/link';
 import Head from "next/head";
 
+function ChangeVisibility1(id1, id2){
+    document.getElementById(id1).style.display = 'block';
+    document.getElementById(id2).style.display = 'none';
+}
+
 export default function Login() {
     return (
         <>
@@ -20,11 +25,11 @@ export default function Login() {
                         <label><b>Пароль</b></label>
                         <input name="password" type="password" placeholder="Введите пароль" required/>
                     </div>
-                    <button className="btn-primary">
+                    <button onClick={()=>ChangeVisibility1('auth-ref', 'not-auth-ref')} id='EntranceUserBtn' className="btn-primary">
                         Войти
                     </button>
                     {' '}
-                    <Link href="/posts/registration" className="btn-link">Перейти на страницу с регистрацией</Link>
+                    <Link href="/posts/Registration" className="btn-link">Перейти на страницу с регистрацией</Link>
                     </form>
                 </div>
             </div>

@@ -1,6 +1,5 @@
 import Head from "next/head";
 
-
 export default function Account(){
     return(
         <>
@@ -10,10 +9,10 @@ export default function Account(){
             <div className="library-menu">
                 <h4 className="library-header">Библиотека пользователя</h4>
                 <div className="library-body">
-                    <button>Просмотренные</button>
-                    <button>Посмотреть позже</button>
-                    <button>Оценки</button>
-                    <button>Отзывы</button>
+                    <p><button className='library-btn'>Просмотренные</button></p>
+                    <p><button className='library-btn'>Посмотреть позже</button></p>
+                    <p><button className='library-btn'>Оценки</button></p>
+                    <p><button className='library-btn'>Отзывы</button></p>
                 </div>
             </div>
         </>
