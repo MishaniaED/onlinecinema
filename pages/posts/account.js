@@ -11,12 +11,12 @@ export default function Account(){
                 <div className="account-body">
                     <div className="form-group">
                         <label><b>Имя пользователя</b></label>
-                        <input name="username" type="text" content="Текущее имя пользователя" required/>
+                        <input name="username" type="text" placeholder="Текущее имя пользователя" required/>
 
                     </div>
                     <div className="form-group">
                         <label><b>Пароль</b></label>
-                        <input name="password" type="password" content="Текущий пароль" required/>
+                        <input name="password" type="password" placeholder="Текущий пароль" required/>
                     </div>
                     <button id ="UpdateDataBtn" className="btn-primary">
                         Обновить

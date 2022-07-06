@@ -37,7 +37,14 @@ export default function Header() {
                         <a>Библиотека</a>
                    </Link>
                    {' '}
-                   <button onClick={()=>ChangeVisibility2('auth-ref', 'not-auth-ref')} id='LogoutBtn' className="logout-btn">Выйти</button>
+                   <Link href='/'>
+                       <a>
+                           <button onClick={()=>ChangeVisibility2('auth-ref', 'not-auth-ref')} id='LogoutBtn' className="logout-btn">
+                               Выйти
+                           </button>
+                       </a>
+                   </Link>
+
                </div>
 
                 <Link href="/posts/about">
