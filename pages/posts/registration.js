@@ -13,7 +13,7 @@ export default function Registration() {
                 <title>Registration</title>
             </Head>
             <div className="card">
-                <h4 className="card-header">Регистрация</h4>
+                <h2 className="card-header">Регистрация</h2>
                 <div className="card-body">
                     <p>Заполните форму, чтобы создать аккаунт.</p>
                     <hr/>

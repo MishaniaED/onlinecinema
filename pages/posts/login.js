@@ -13,7 +13,7 @@ export default function Login() {
                 <title>Login</title>
             </Head>
             <div className="card">
-                <h4 className="card-header">Вход в аккаунт</h4>
+                <h2 className="card-header">Вход в аккаунт</h2>
                 <div className="card-body">
                     <form className="form-login" >
                     <div className="form-group">

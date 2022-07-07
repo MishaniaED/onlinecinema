@@ -16,6 +16,7 @@ const MyPaginate = styled(ReactPaginate).attrs({
   list-style-type: none;
   padding: 0 5rem;
   li a {
+    bottom: 0;
     border-radius: 7px;
     padding: 0.1rem 1rem;
     border: gray 1px solid;
@@ -41,13 +42,11 @@ const MyPaginate = styled(ReactPaginate).attrs({
   }
 `;
 
-
 export default class Card extends Component{
     render(){
         return (
             <div className={styles.container}>
                 <h1 className = "title"> Главная </h1>
-
                 <div className="film-card">
                     <img src="/logo.png" alt="Preview" width={200} height={200}/>
                     <div className="container">
@@ -61,7 +60,7 @@ export default class Card extends Component{
                         </Link>
                     </div>
                 </div>
-                <PaginatedItems itemsPerPage={4} />,
+                {/*<PaginatedItems itemsPerPage={4} />,*/}
             </div>
         )
     }
@@ -107,101 +106,26 @@ export class CardMain extends Component{
         let selected = data.selected;
         let offset = Math.ceil(selected * 9);
 
-        /*this.setState({ offset: offset }, () => {
-            this.loadCommentsFromServer();
-        });*/
     };
     constructor(props) {
         super(props);
 
         this.state = {
-            data: [1,2,3,4,5,6,7,8,9,10,11,12,13],
+            data: [],
             offset: 0,
         };
     }
-        /*render(){
-            return(
-                <CardList/>
-                <nav>
 
-                </nav>
-                /!*<ReactPaginate
-                breakLabel="..."
-                nextLabel="next >"
-                onPageChange={handlePageClick}
-                pageRangeDisplayed={4}
-                pageCount={pageCount}
-                previousLabel="< previous"
-                renderOnZeroPageCount={null}
-                />*!/
-            );
-        }*/
     render() {
-        this.state.data = [1,2,3,4,5,6,7,8,9,10,11,12,13]
+        this.state.data = [1,2,3,4,5,6,7,8,9]
         return (
-            <div className="commentBox">
-                <MyPaginate
-                pageCount={20}
-                onPageChange={this.handlePageClick}
-                forcePage={1}
-                />
+            <div className="CardBox">
                 <CardList data={this.state.data}/>
-
-                <nav aria-label="Page navigation comments" className="mt-4">
-                    <ReactPaginate
-                        /*nextLabel="next"*/
-
-                        /*previousLabel="previous"
-                        nextLabel="next"
-                        breakLabel="..."
-                        breakClassName="page-item"
-                        breakLinkClassName="page-link"
-                        pageCount={20}
-                        pageRangeDisplayed={4}
-                        marginPagesDisplayed={2}
-                        onPageChange={this.handlePageClick}
-                        containerClassName="pagination justify-content-center"
-                        pageClassName="page-item"
-                        pageLinkClassName="page-link"
-                        previousClassName="page-item"
-                        previousLinkClassName="page-link"
-                        nextClassName="page-item"
-                        nextLinkClassName="page-link"
-                        activeClassName="active"
-                        // eslint-disable-next-line no-unused-vars
-                        hrefBuilder={(page, pageCount, selected) =>
-                            page >= 1 && page <= pageCount ? `/page/${page}` : '#'
-                        }
-                        hrefAllControls
-                        forcePage={currentPage}
-                        onClick={(clickEvent) => {
-                            console.log('onClick', clickEvent);*/
-
-                        breakLabel="..."
-                        breakClassName="page-item"
-                        breakLinkClassName="page-link"
-                        onPageChange={this.handlePageClick}
-                        pageRangeDisplayed={4}
-                        pageCount={9}
-                        containerClassName="pagination justify-content-center"
-                        /*previousLabel="< previous"*/
-                        pageClassName="page-item"
-                        pageLinkClassName="page-link"
-                        previousClassName="page-item"
-                        previousLinkClassName="page-link"
-                        nextClassName="page-item"
-                        nextLinkClassName="page-link"
-                        activeClassName="active"
-                        renderOnZeroPageCount={null}
-                        onClick={(clickEvent) => {
-                            console.log('onClick', clickEvent);
-                        }}
-                        hrefBuilder={(page, pageCount, selected) =>
-                            page >= 1 && page <= pageCount ? `/page/${page}` : '#'
-                        }
-                        hrefAllControls
-                    />
-                </nav>
+                <MyPaginate
+                    pageCount={10}
+                    onPageChange={this.handlePageClick}
+                    forcePage={0}
+                />
             </div>
         );
     }

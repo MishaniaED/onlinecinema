@@ -7,7 +7,7 @@ export default function Account(){
                 <title>Account</title>
             </Head>
             <div className="account-menu">
-                <h4 className="account-header">Личный кабинет</h4>
+                <h2 className="account-header">Личный кабинет</h2>
                 <div className="account-body">
                     <div className="form-group">
                         <label><b>Имя пользователя</b></label>
